@@ -90,7 +90,7 @@ return (
         <div className="item feature_news_item"> 
            {news.image && 
            <img
-          src={`${process.env.REACT_APP_API_URL}/${news.image}`}
+          src={`http://localhost:3002/${news.image}`}
           alt=''
            className='newsReadImg'
           />}
