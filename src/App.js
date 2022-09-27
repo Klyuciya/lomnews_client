@@ -49,6 +49,7 @@ function App() {
         {/* <Route path='/news/user/my/edit/:id' element={<EditNews />} /> */}
         <Route path="register" element={<Register />}></Route>
         <Route path="login" element={<Login />}></Route>
+        <Route path='/news/category/:id' element={<NewsByCategories/>} />
       </Routes>
       <ToastContainer position="top-center" />
     </Layout>
