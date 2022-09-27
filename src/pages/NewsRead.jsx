@@ -95,7 +95,7 @@ return (
            <img
           src={`http://localhost:3002/${news.image}`}
           alt=''
-           className='newsReadImg'
+           className='newsReadImg img-thumbnail'
           />}
         </div>
           <div className="item_wrapper">
