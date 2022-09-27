@@ -149,7 +149,7 @@ return (
                                 </h2>
 							</div>
         </div> 
-        
+        {isAuth ? (
         <div className="add_a_comment">
 						<div className="single_media_title"><h2>Add a Comment</h2></div>
 						<div className="comment_form">
@@ -162,7 +162,7 @@ return (
 	            </form>
               <button type="submit" className="btn btn-submit red" onClick={handleSubmit}>Submit</button>
             </div>
-					</div>
+					</div>) :(<div></div>)}
       </div>
       
      

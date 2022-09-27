@@ -42,8 +42,8 @@ const navigate = useNavigate();
                 </div>
                 
                 <p className=' text-body fs-5'>
-                    {/* {(news.newsText).substr(0,300)}... */}
-                    {news.newsText}
+                    {(news.newsText).substr(0,300)}...
+                    {/* {news.newsText} */}
                 </p>
 
                 <div className='flex gap-3 items-center pb-5'>
