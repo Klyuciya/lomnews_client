@@ -11,6 +11,8 @@ import { useLocation} from "react-router"
 import { CommentItem } from "../components/CommentItem";
 import { PopularsNews } from '../components/PopularsNews'
 import {  getAllNews } from '../redux/features/news/singleNewsSlice'
+import { checkIsAuth } from "../redux/features/auth/authSlice";
+
 import { AiTwotoneEdit,
   AiFillDelete, } from 'react-icons/ai'
   import { deleteMyNews } from '../redux/features/news/singleNewsSlice'
@@ -20,6 +22,7 @@ export const NewsRead = () => {
 
   const navigate = useNavigate()
 
+  const isAuth = useSelector(checkIsAuth);
 
   const location = useLocation();
   var path = location.pathname.split("/")[2];
