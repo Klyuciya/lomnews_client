@@ -29,7 +29,7 @@ const navigate = useNavigate();
                 >
                     {news.image && (
                         <img
-                            src={`http://localhost:3002/${news.image}`}
+                            src={`${process.env.REACT_APP_API_URL}/${news.image}`}
                             alt='img'
                         />
                     )}
