@@ -18,7 +18,6 @@ export const Weather = () => {
       .then(res => res.json())
       .then(result => {
         setData(result)
-        // console.log(result)
       });
     }
     fetchData();
@@ -41,12 +40,7 @@ export const Weather = () => {
 						<a  href="#"><img class="img-responsive" height="80px"  src={ad} alt=""/></a>
 						</div>
 		    	 	</div>
-		    	 	
-		    	 	{/* <div class="col-md-1 pl-3 text-end">
-                <img src={`http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`}/>
-              
-              </div>  */}
-            <div class="col-md-3 d-flex flex-row justify-content-end " >
+		    	            <div class="col-md-3 d-flex flex-row justify-content-end " >
               <div>
             <img src={`http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`}/></div>
             <div className="my-auto text-end">
