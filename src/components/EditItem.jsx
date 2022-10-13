@@ -48,7 +48,7 @@ export const EditItem = ({ news }) => {
                 >
                     {news.image && (
                         <img
-                            src={`process.env.REACT_APP_API_URL/${news.image}`}
+                            src={`${process.env.REACT_APP_API_URL}/${news.image}`}
                             alt='img'
                         />
                     )}

@@ -29,7 +29,7 @@ const navigate = useNavigate();
                 >
                     {news.image && (
                         <img className='img-thumbnail'
-                            src={`process.env.REACT_APP_API_URL/${news.image}`}
+                            src={`${process.env.REACT_APP_API_URL}/${news.image}`}
                             alt='img'
                         />
                     )}

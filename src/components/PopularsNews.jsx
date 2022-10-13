@@ -10,7 +10,7 @@ export const PopularsNews = ({ news }) => {
         <div className='d-flex flex-row pop_news'>
             
             <div className='col-4'> {news.image && (
-                        <img width="50px" src={`process.env.REACT_APP_API_URL/${news.image}`}
+                        <img width="50px" src={`${process.env.REACT_APP_API_URL}/${news.image}`}
                             alt='img'
                         />)}
                 
